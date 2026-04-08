@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
+export LC_ALL=ru_RU.UTF-8
 export LANG=ru_RU.UTF-8
+export LANGUAGE=ru_RU.UTF-8
 
 pushd /etc/ImageMagick-* > /dev/null
 sudo sed -i -e s:'</policymap>':"  <policy domain="\""coder"\"" rights="\""read | write"\"" pattern="\""EPS"\"" />\n  <policy domain="\""coder"\"" rights="\""read | write"\"" pattern="\""PDF"\"" />\n</policymap>": policy.xml
