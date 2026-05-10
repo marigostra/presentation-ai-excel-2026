@@ -1,0 +1,25 @@
+@startuml
+scale 2
+
+participant "Приложение" as a
+participant "Языковая модель" as m
+participant "Microsoft Excel" as ex
+participant "xlwings" as x
+
+a -> m: "Запрос"
+activate m
+m -> a: "Вызов tool для обращения к Microsoft Excel"
+deactivate m
+a -> x: "Выполнение операции"
+activate x
+x -> ex: "Трансляция запроса"
+activate ex
+ex -> x: "Результат выполнения"
+deactivate ex
+x -> a: "Транслированный результат выполнения"
+deactivate x
+a -> m: "Повторный запрос с результатами выполнения операции"
+activate m
+m -> a: "Обработанный результат"
+deactivate m
+@enduml

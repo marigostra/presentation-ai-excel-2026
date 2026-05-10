@@ -1,0 +1,11 @@
+@startuml
+scale 3
+component "Приложение" as app
+component "Языковая модель" as llm
+component "Microsoft Excel" as weatherex
+component "xlwings" as x
+
+a <--> llm
+a <--> x
+a <--> ex
+@enduml

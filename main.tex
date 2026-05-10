@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{psfrag}
-\usepackage{hyperref}
+ \usepackage{hyperref}
 \usepackage[normalem]{ulem}
 
 \beamertemplatenavigationsymbolsempty
@@ -47,24 +47,80 @@
 \let\varsigma\sigma                                                                            
 \DeclareMathSymbol{\varphi}{\mathord}{greek}{"27}
 
-\title{Казуистические основы формалировки заголовков презентаций в~академических традициях Сибири}
-\author{Томский~А.~Б.}
+\title{Интеллектуальный ассистент для~работы с~Microsoft Excel при~помощи больших языковых моделей}
+\author{Самойлов Даниил}
 \date{\today}
 
 \begin{document}
 \maketitle
 
 \begin{frame}
-\frametitle{ТГУ}
-\framesubtitle{Томский государственный университет}
+\frametitle{Актуальность работы}
+\framesubtitle{Проблематика, объект и предмет  исследования}
+
+Управление Microsoft Excel с~помощью интеллектуальных ассистентов становится важным навыком в~современной аналитике,
+т.~к. такие инструменты позволяют мгновенно автоматизировать рутинные операции, создавать макросы на~естественном языке и быстро интерпретировать большие массивы данных
+Это принципиально меняет работу с~таблицами и роль специалиста:
+он фокусируется на~логике анализа, проверке гипотез и принятии решений.
+
+{\bf Объект исследования:} механизм tools calling для~связи языковой модели и Microsoft Excel.
+
+{\bf Предмет исследования: управление Microsoft Excel при~помощи языковых моделей.
 \end{frame}
 
 \begin{frame}
-\frametitle{UML}
-\framesubtitle{Пример диаграммы UML}
+\frametitle{Цель и задачи}
+
+{\bf Цель:} разработать интеллектуальный ассистент для~управления Microsoft Excel при~помощи команд на~естественном языке с~использованием больших языковых моделей.
+
+{\bf Задачи:}
+
+\begin{enumerate}
+\item {Организация взаимодействия с~Microsoft Excel для~формирования табличных документов и проведения вычислений.}
+\item {Организация взаимодействия с~языковой моделью с~использованием технологии tools calling.}
+\item {Тестирование и оценка полученных результатов.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Обработка запроса}
+\framesubtitle{последовательность обмена информацией для~выполнения команды}
 \begin{figure}[h]
-\includegraphics[width=9cm,height=5cm,keepaspectratio]{demo-uml.pdf}
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{tools-seq.pdf}
 \end{figure}
 \end{frame}
+
+\begin{frame}
+\frametitle{Компоненты системы}
+\framesubtitle{Структура взаимодействия компонентов системы}
+\begin{figure}[h]
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{service-comp.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Заключение}
+  \framesubtitle{Текущие результаты работы}
+
+  \begin{enumerate}
+  \item {
+Разработан интеллектуальный ассистент для~управления Microsoft Excel с~обработкой запросов на~естественном языке. 
+  }
+  \item {
+Организовано взаимодействие с~zязыковыми моделями при~помощи OpenAI~API.
+  }
+  \item {
+Работа ассистента протестирована на~проверочных примерах с~получением планируемого результата.
+    }
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+{\Large Спасибо за~внимание!}
+    \end{center}
+  \end{frame}
+
+
 
 \end{document}
